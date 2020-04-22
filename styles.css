@@ -1,6 +1,4 @@
-*{
-    margin: 1px; 
-}
+
 .nav{
     background-color: blueviolet;
     height: 100px;
@@ -24,3 +22,100 @@
     font-size: larger;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.table{
+    background-color: darkorange;
+}
+tr, td{
+    border-collapse: collapse;
+    border-color: black;
+    
+}
+img{
+    width: 100%
+}
+.card{
+display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow:2px 4px 10px rgb(53, 47, 47);;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 45%;
+  margin-top: 15%;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .card-header::before{
+      background-color: lightblue;
+      content: "Small View";
+    }
+    .card-body{
+        background-color: indigo;
+
+    }
+    .card-title::before{
+        background-color: indigo;
+        content: "Hey";
+    }
+    .card-text::before{
+        background-color: blue;
+        content: "This is a small screen View";
+    }
+
+  }
+
+  @media only screen and (min-width: 601px) {
+    .card-header::before{
+      background-color: crimson;
+      content: "Large View";
+      color: white
+    }
+    .card-body{
+        background-color:firebrick;
+
+    }
+    .card-title::before{
+        content: "Hey";
+        color: white;
+    }
+    .card-text::before{
+        content: "This is a large screen view";
+        color: white;
+    }
+
+  }  
+
+
+
+
+  .col-sm{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .lor{
+      background-color: blueviolet;
+      margin: 10px;
+      padding: 10px;
+  }
